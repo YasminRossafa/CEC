@@ -77,6 +77,6 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;line-he
 .bg-ink .contact-line b,.bg-green-deep .contact-line b{color:#C9D2CD}
 .bg-ink .contact-line span,.bg-ink .contact-line a,
 .bg-green-deep .contact-line span,.bg-green-deep .contact-line a{color:#EDEDED}
-p{margin:0 0 1em}
+p{margin:0 0 1em;text-align:justify}
 h2 + p,h2 + .lead,h2 + p.lead{margin-top:1.1rem}
 ::selection{background:var(--green-bright);color:var(--ink)}
