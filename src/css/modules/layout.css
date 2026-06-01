@@ -46,6 +46,7 @@
 
 /* utility ------------------------------------------------------------ */
 .center{text-align:center}
+.center p{text-align:center}
 .mt-cta{margin-top:40px}
 .divider-rule{height:1px;background:var(--line);border:none;margin:0}
 .maxw{max-width:760px}
@@ -61,9 +62,10 @@
   #sobre .section-head{margin-bottom:-70px}
 }
 @media(max-width:860px){
-  .two-col{grid-template-columns:1fr;gap:36px}
+  .two-col{grid-template-columns:1fr!important;gap:36px!important}
   .grid-2{grid-template-columns:1fr;gap:36px}
 }
+
 @media(max-width:767px){
   .two-col{gap:28px}
   .grid-2{gap:28px}
