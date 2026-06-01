@@ -1,0 +1,82 @@
+@theme {
+  --color-ink: #0D0D0D;
+  --color-paper: #FAFAFA;
+  --color-green: #2D6A4F;
+  --color-green-bright: #52B788;
+  --color-green-deep: #173A2C;
+  --color-green-pale: #E6F1EA;
+  --color-sand: #F1EBDD;
+  --color-sand-deep: #E7DEC9;
+  --color-clay: #B26A3C;
+  --color-olive: #8B954F;
+
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+}
+
+:root{
+  --ink:#0D0D0D;
+  --paper:#FAFAFA;
+  --green:#2D6A4F;
+  --green-bright:#52B788;
+  --green-deep:#173A2C;
+  --green-pale:#E6F1EA;
+  --sand:#F1EBDD;
+  --sand-deep:#E7DEC9;
+  --clay:#B26A3C;
+  --olive:#8B954F;
+
+  --ink-70:rgba(13,13,13,.66);
+  --ink-50:rgba(13,13,13,.50);
+  --line:rgba(13,13,13,.14);
+  --line-soft:rgba(13,13,13,.08);
+  --paper-70:rgba(250,250,250,.70);
+  --paper-45:rgba(250,250,250,.45);
+  --paper-15:rgba(250,250,250,.13);
+
+  --r-lg:22px;
+  --r-md:16px;
+  --r-sm:10px;
+  --wrap:1220px;
+
+  --shadow:0 24px 60px -28px rgba(13,30,22,.45);
+  --shadow-sm:0 12px 30px -18px rgba(13,30,22,.4);
+
+  --fs-display:clamp(2.7rem,7vw,5.6rem);
+  --fs-h2:clamp(2rem,4.4vw,3.4rem);
+  --fs-h3:clamp(1.35rem,2.2vw,1.85rem);
+
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:'Archivo',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.015em;margin:0}
+/* headings & labels on dark surfaces → soft light gray for legibility */
+.bg-ink h1,.bg-ink h2,.bg-ink h3,.bg-ink h4,
+.bg-green-deep h1,.bg-green-deep h2,.bg-green-deep h3,.bg-green-deep h4,
+.phero h1,.phero h2,.hero h1{color:#E6E6E6}
+.bg-ink .contact-line b,.bg-green-deep .contact-line b{color:#C9D2CD}
+.bg-ink .contact-line span,.bg-ink .contact-line a,
+.bg-green-deep .contact-line span,.bg-green-deep .contact-line a{color:#EDEDED}
+p{margin:0 0 1em}
+h2 + p,h2 + .lead,h2 + p.lead{margin-top:1.1rem}
+::selection{background:var(--green-bright);color:var(--ink)}
