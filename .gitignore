@@ -3,6 +3,4 @@ dist/
 .DS_Store
 *.local
 public/robots.txt
-public/sitemap.xml
-public/sitemap.xml
 .claude
