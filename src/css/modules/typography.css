@@ -28,16 +28,6 @@
   .section-head h2{width:auto!important;height:auto!important;max-width:100%}
 }
 
-/* textlink ----------------------------------------------------------- */
-.textlink{
-  font-family:'Space Mono',monospace;font-weight:700;font-size:.82rem;
-  letter-spacing:.06em;text-transform:uppercase;
-  display:inline-flex;align-items:center;gap:.5em;
-  border-bottom:2px solid var(--green-bright);padding-bottom:3px;
-  transition:gap .2s var(--ease),border-color .2s;
-}
-.textlink:hover{gap:.85em;border-color:var(--clay)}
-
 /* crumbs / breadcrumb ------------------------------------------------ */
 .crumbs{font-family:'Space Mono',monospace;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-45);margin-bottom:1.5rem;display:flex;gap:.6em;align-items:center;text-align:left}
 .crumbs a:hover{color:var(--green-bright)}
