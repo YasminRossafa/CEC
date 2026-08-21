@@ -85,18 +85,16 @@
     if (a.dataset.page === here) a.classList.add('active');
   });
 
-  /* ---- contact form (demo — no backend connected) ----
-   * TODO before launch: replace data-demo with real submission logic.
-   * Options: Formspree, EmailJS, or a custom server endpoint.
-   * Remove this handler and the data-demo attribute when integrated. */
+  /* ---- contact form — mailto ---- */
   document.querySelectorAll('form[data-demo]').forEach(form => {
     form.addEventListener('submit', e => {
       e.preventDefault();
-      console.warn('[CEC] Formulário em modo demo — nenhuma mensagem foi enviada. Conecte a um backend antes do lançamento.');
-      const ok = form.querySelector('[data-ok]');
-      form.querySelector('button[type=submit]').textContent = 'Mensagem enviada ✓';
-      if (ok) ok.hidden = false;
-      form.reset();
+      const nome = (form.querySelector('[name=nome]')?.value || '').trim();
+      const email = (form.querySelector('[name=email]')?.value || '').trim();
+      const mensagem = (form.querySelector('[name=mensagem]')?.value || '').trim();
+      const subject = encodeURIComponent('Contato pelo site — ' + nome);
+      const body = encodeURIComponent('Nome: ' + nome + '\nE-mail: ' + email + '\n\nMensagem:\n' + mensagem);
+      window.location.href = 'mailto:cec.ufscar.adm@gmail.com?subject=' + subject + '&body=' + body;
     });
   });
 
